@@ -3,96 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOS.University - Online Learning Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SOS.University - Empowering Emergency Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>SOS.University</h1>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">SOS.University</h1>
             <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#events">Hackathons</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="flex space-x-4">
+                    <li><a href="#about" class="hover:underline">About</a></li>
+                    <li><a href="#programs" class="hover:underline">Programs</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <div class="container">
-                <h2>Welcome to SOS.University</h2>
-                <p>Your premier platform for learning how to handle online emergencies and participate in cutting-edge hackathons.</p>
-                <a href="#courses" class="cta-button">Explore Courses</a>
-            </div>
+    <main class="container mx-auto mt-8 p-4">
+        <section id="hero" class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Emergency Education for All</h2>
+            <p class="text-xl mb-8">SOS.University provides rapid, accessible learning solutions in times of crisis.</p>
+            <a href="#programs" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Explore Our Programs</a>
         </section>
 
-        <!-- Courses Section -->
-        <section id="courses">
-            <div class="container">
-                <h2>Our Courses</h2>
-                <div class="courses">
-                    <div class="course">
-                        <h3>Intro to Online Emergency Management</h3>
-                        <p>Learn the basics of managing online emergencies with practical examples and expert guidance.</p>
-                    </div>
-                    <div class="course">
-                        <h3>Advanced Cybersecurity Tactics</h3>
-                        <p>Deep dive into advanced cybersecurity measures to protect your systems and data.</p>
-                    </div>
-                    <div class="course">
-                        <h3>AI-Driven Solutions for Crisis Management</h3>
-                        <p>Explore how AI can be leveraged to handle crises and automate responses.</p>
-                    </div>
+        <section id="about" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">About SOS.University</h2>
+            <p class="mb-4">SOS.University is a cutting-edge platform designed to deliver emergency education services to individuals and communities facing unexpected disruptions. Our mission is to ensure that learning never stops, even in the most challenging circumstances.</p>
+            <p>We leverage technology and innovative teaching methods to provide quick, adaptable, and effective educational solutions.</p>
+        </section>
+
+        <section id="programs" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Our Programs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2">Rapid Response Courses</h3>
+                    <p>Short, intensive courses designed to quickly impart essential skills and knowledge in emergency situations.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2">Crisis Management Training</h3>
+                    <p>Specialized programs to equip individuals with the skills needed to navigate and manage crisis scenarios effectively.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2">Digital Literacy Bootcamps</h3>
+                    <p>Intensive training to ensure everyone has the digital skills necessary in today's rapidly changing world.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-2">Community Resilience Workshops</h3>
+                    <p>Collaborative learning experiences focused on building stronger, more adaptable communities.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Hackathons Section -->
-        <section id="events">
-            <div class="container">
-                <h2>Upcoming Hackathons</h2>
-                <p>Join our hackathons to apply your skills in real-world scenarios, compete with peers, and learn from experts.</p>
-                <a href="#" class="cta-button">Register Now</a>
-            </div>
-        </section>
-
-        <!-- About Us Section -->
-        <section id="about">
-            <div class="container">
-                <h2>About SOS.University</h2>
-                <p>SOS.University is dedicated to providing top-notch education and training in online emergency management. Our courses are designed by industry experts and cater to both beginners and advanced professionals.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <p>Have questions? Reach out to us for more information about our courses and events.</p>
-                <ul>
-                    <li>Email: contact@sos.university</li>
-                    <li>Phone: 1-800-UNIVERSITY</li>
-                </ul>
-            </div>
+        <section id="contact" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <p class="mb-4">Need emergency educational support? We're here to help.</p>
+            <form class="bg-white p-6 rounded-lg shadow">
+                <div class="mb-4">
+                    <label for="name" class="block mb-2">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full p-2 border rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition duration-300">Send Message</button>
+            </form>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
+    <footer class="bg-blue-600 text-white p-4 mt-12">
+        <div class="container mx-auto text-center">
             <p>&copy; 2024 SOS.University. All rights reserved.</p>
         </div>
     </footer>
-
-    <!-- Optional JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
